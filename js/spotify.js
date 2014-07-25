@@ -1,13 +1,4 @@
 // https://developer.spotify.com/web-api/search-item/
-function findByArtists(spotify_uri){
-  var url = 'http://ws.spotify.com/lookup/1/?uri=' + spotify_uri,
-      artistInfo;
-
-  $.getJSON(url).then(function(data) {
-    artistInfo = data;
-  });
-}
-
 function searchByAlbum(keyword) {
   var url = "https://api.spotify.com/v1/search?q="+keyword + "&type=album";
 
