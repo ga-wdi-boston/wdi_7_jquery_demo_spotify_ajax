@@ -82,6 +82,7 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 
 	```
 		# When your in the topic/feature branch
+		# Make sure all changes are committed.
 
 		# Push the feature branch up to github.
 		git push origin <feature branch name>
