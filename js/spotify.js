@@ -1,11 +1,11 @@
-// API Docs at: 
+// API Docs at:
 // https://developer.spotify.com/technologies/web-api/search/
 
 // Album:
-// 'http://ws.spotify.com/search/1/album.json?q=';
+// "https://api.spotify.com/v1/search?q="+keyword + "&type=album";
 
 // Artist:
-// 'http://ws.spotify.com/search/1/artist.json?q=';
+// "https://api.spotify.com/v1/search?q="+keyword + "&type=artist";
 
 // Track:
-// 'http://ws.spotify.com/search/1/track.json?q=';
+// "https://api.spotify.com/v1/search?q="+keyword + "&type=track";
