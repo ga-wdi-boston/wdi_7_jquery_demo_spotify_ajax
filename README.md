@@ -77,19 +77,18 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 
 	Now the feature branch is up to date with master.
 
-* When the feature is complete the feature _owner_ will merge the topic/feature branch into the master and push up to github.
-
+* When the feature is complete the feature _owner_ will make sure all is committed, push the feature branch up to the github repo and make a pull request.
 	__MAKE SURE MASTER AND FEATURE BRANCHES ARE UP TO DATE BEFORE DOING THE BELOW__
 
 	```
 		# When your in the topic/feature branch
 
-		# Switch to the master branch
-		git checkout master
+		# Push the feature branch up to github.
+		git push origin <feature branch name>
 
-		# Merge the feature branch commits into the master branch.
-		git merge <topic/feature branch name>
-
-		# Sync master branch to Github master tracking branch.
-		git push origin master
 	```
+
+	* In the github repo page you should select this branch.  
+	* 
+	
+	
