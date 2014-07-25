@@ -31,7 +31,7 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 3. Search by track.  
 
 #### Procedure
-* One team member will fork this repo. The entire team will work from this forked repo.
+* One team member will fork this repo into their Github account. The entire team will work from this forked repo.
 	* Can use any team member's github account to hold this forked repo.
 	* Add other team members as colloborators to this repo. 
 		 _See the Settings on the right in the github repo_.  
@@ -45,7 +45,10 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 	 This feature branch should also have a remote branch, _tracking branch_, in the github repo.
 	 
 	 ```
+	 	# Switch to the feature branch
 	 	git checkout -b <topic/feature branch name>
+
+	 	# Create a remote tracking branch that will exist in the Github repo
 	 	git push origin <topic/feature branch name>
 	 ```
 	 
@@ -54,7 +57,9 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 	__THIS WILL BRING YOUR FEATURE BRANCH UP TO DATE__
 
 	```
-		# In the topic/feature branch
+		# When your in the topic/feature branch
+		
+		# Switch to the master branch
 		git checkout master
 
 		# Sync local master with remote master
@@ -75,8 +80,15 @@ This will be completed by a Team. Each member of the team will be repsonsible fo
 	__MAKE SURE MASTER AND FEATURE BRANCHES ARE UP TO DATE BEFORE DOING THE BELOW__
 
 	```
+		# When your in the topic/feature branch
+
+		# Switch to the master branch
 		git checkout master
+		
+		# Merge the feature branch commits into the master branch.
 		git merge <topic/feature branch name>
+		
+		# Sync master branch to Github master tracking branch.
 		git push origin master
 	```
 
